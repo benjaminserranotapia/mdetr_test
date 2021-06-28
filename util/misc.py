@@ -14,9 +14,9 @@ import torchvision
 from torch import Tensor
 
 # needed due to empty tensor bug in pytorch and torchvision 0.5
-#if float(torchvision.__version__[:3]) < 0.7:
-   # from torchvision.ops import _new_empty_tensor
-    #from torchvision.ops.misc import _output_size
+if float(torchvision.__version__[:3]) == 0.7:
+    from torchvision.ops import _new_empty_tensor
+    from torchvision.ops.misc import _output_size
 #This section is comented for issues with 0.10.0 version
 
 def get_sha():
