@@ -13,7 +13,7 @@ from torch import nn
 import util.dist as dist
 from util import box_ops
 from util.metrics import accuracy
-from util.misc import NestedTensor, interpolate
+from util.misc2 import NestedTensor, interpolate
 
 from .backbone import build_backbone
 from .matcher import build_matcher
